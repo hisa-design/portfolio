@@ -24,3 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 }); // ← これ絶対必要！
+
+images.forEach(img => {
+  img.addEventListener("click", () => {
+    console.log("画像クリックされたよ:", img.src);
+    modal.style.display = "block";
+    modal.classList.add("show");
+    modalImg.src = img.src;
+  });
+});
