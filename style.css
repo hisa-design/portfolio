@@ -478,10 +478,20 @@ footer {
   }
 
   /* works-scroll スマホ用 */
-  body.works-page {
-    transform: scale(1.5);
-    transform-origin: top left;
-    width: 66.6667%;
-    overflow-x: auto;
+  .works-scroll {
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .work-item {
+    flex: 0 0 90vw; /* 画面幅の90% */
+    max-width: 90vw;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+  }
+  
+  .work-item p {
+    font-size: 16px; /* ちょっと大きく */
+    padding: 12px 8px;
   }
 }
