@@ -478,7 +478,7 @@ footer {
 
   /* works-scroll スマホ用 */
   .works-page {
-    transform: scale(1.5);
+    transform: scale(2.0);
     transform-origin: top left;
     width: 66.6667%;
   }
