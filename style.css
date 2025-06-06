@@ -477,7 +477,10 @@ footer {
   }
 
   /* works-scroll スマホ用 */
- .work-item {
-    width: 525px; /* 350px × 1.5倍 */
+  body.works-page {
+    transform: scale(1.5);
+    transform-origin: top left;
+    width: 66.6667%;
+    overflow-x: auto;
   }
 }
