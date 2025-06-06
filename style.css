@@ -476,10 +476,7 @@ footer {
   .fixed-nav nav ul::-webkit-scrollbar-track {
     background: #ffe5e5;
   }
-}
 
-/* 作品カード スマホ用 */
-@media (max-width: 600px) {
   .work-item {
     width: 200% !important;
     background-color: #f99 !important;
