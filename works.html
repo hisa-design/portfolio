@@ -5,10 +5,10 @@
   <title>ひさの作品一覧</title>
   <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-
-  <!-- ナビゲーション -->
-   <header class="fixed-nav">
+<!-- ナビゲーション -->
+<header class="fixed-nav">
   <nav>
     <ul>
       <li><a href="index.html">ホーム</a></li>
@@ -19,49 +19,31 @@
   </nav>
 </header>
 
-  <header>
-    <h1>My Works</h1>
-    <p>これまでの作品たち</p>
-  </header>
-<body>
- <section class="works-scroll">
+<!-- ページタイトル -->
+<section>
+  <h1>My Works</h1>
+  <p>これまでの作品たち</p>
+</section>
+
+<!-- 作品一覧 -->
+<section class="works-scroll">
   <div class="work-item">
     <img src="img/works1.jpg" alt="作品1" class="work-image">
     <p>梅雨雑貨フェア（バナー）</p>
   </div>
-  <div class="work-item">
-    <img src="img/works2.jpg" alt="作品1" class="work-image">
-    <p>かき氷フェス（バナー）</p>
-  </div>
-  <div class="work-item">
-    <img src="img/works3.jpg" alt="作品1" class="work-image">
-    <p>ほしぞら文具（バナー）</p>
-  </div>
-  <div class="work-item">
-    <img src="img/works4.jpg" alt="作品1" class="work-image">
-    <p>いい日になるよ。（ミニバナー）</p>
-  </div>
-  <div class="work-item">
-    <img src="img/works5.jpg" alt="作品1" class="work-image">
-    <p>うつ病って。（アート）</p>
-  </div>
-  <!-- 以下同様 -->
+  <!-- 以下省略 -->
 </section>
 
-<!-- 拡大用モーダル -->
+<!-- モーダル -->
 <div id="modal" class="modal">
   <span id="close">&times;</span>
   <img id="modal-img" src="" alt="">
 </div>
 
-  
-  <!-- 必要ならもっと追加OK -->
-</section>
+<footer>
+  <p>Thank you for visiting💐</p>
+</footer>
 
-
-  <footer>
-    <p>Thank you for visiting💐</p>
-  </footer>
-  <script src="works.js"></script>
+<script src="js/works.js"></script>
 </body>
 </html>
