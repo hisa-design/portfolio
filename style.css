@@ -425,7 +425,7 @@ footer {
 }
 
 /* スマホ用 */
-@media (max-width: 800px) {
+@media (max-width: 80%) {
   /* ナビ */
   .fixed-nav {
     height: 50px;
