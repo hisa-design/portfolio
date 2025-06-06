@@ -128,6 +128,7 @@ header p {
   list-style: none;
 }
 
+
 .fixed-nav nav ul li a {
   display: inline-block;
   min-width: 120px;
@@ -434,16 +435,19 @@ footer {
     padding-top: 50px;
   }
 
+ @media screen and (max-width: 480px) {
   .fixed-nav nav ul {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch; /* iOS用のスムーズスクロール */
+    -webkit-overflow-scrolling: touch;
     padding: 8px 10px;
     margin: 0;
     list-style: none;
-    gap: 8px; /* 余白調整 */
+    gap: 8px;
   }
+}
+
 
   .fixed-nav nav ul li {
     flex: 0 0 auto; /* 横並び固定 */
