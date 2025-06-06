@@ -464,6 +464,27 @@ body {
   color: #a04e4f;
 }
 
+/* Secretリンク */
+.secret {
+  margin: 30px 0;
+}
+
+.secret a {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #c08081;
+  border: 1px solid #c08081;
+  border-radius: 20px;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+
+.secret a:hover {
+  background-color: #ffe5e5;
+  color: #a04e4f;
+}
+
 /* フッター */
 footer {
   margin-top: 40px;
