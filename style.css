@@ -481,7 +481,6 @@ footer {
   /* 作品カード */
 @media (max-width: 600px) {
   .work-item {
-    width: 135% !important;
+    width: 150% !important; /* もっと大きく */
   }
 }
-
