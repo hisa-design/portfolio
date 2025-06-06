@@ -427,6 +427,7 @@ footer {
 @media screen and (max-width: 480px) {
   .fixed-nav {
     height: 50px;
+    overflow-x: auto; /* ← 親にも横スクロール許可 */
   }
 
   body {
@@ -434,14 +435,33 @@ footer {
   }
 
   .fixed-nav nav ul {
-    justify-content: flex-start;
-    overflow-x: auto;
+    display: flex;
     flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* iOS用のスムーズスクロール */
     padding: 8px 10px;
+    margin: 0;
+    list-style: none;
+    gap: 8px; /* 余白調整 */
   }
 
-  /* ←このへんに追加する！ */
+  .fixed-nav nav ul li {
+    flex: 0 0 auto; /* 横並び固定 */
+  }
 
+  .fixed-nav nav ul li a {
+    display: inline-block;
+    min-width: 60px;
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 20px;
+    background: #fce4ec;
+    text-align: center;
+    color: #c08081;
+    text-decoration: none;
+  }
+
+  /* スクロールバーも */
   .fixed-nav nav ul::-webkit-scrollbar {
     height: 4px;
   }
@@ -454,12 +474,4 @@ footer {
   .fixed-nav nav ul::-webkit-scrollbar-track {
     background: #ffe5e5;
   }
-
-  .fixed-nav nav ul li a {
-    min-width: 40px;
-    padding: 6px 10px;
-    font-size: 8px;
-    margin: 0 4px;
-  }
 }
-
