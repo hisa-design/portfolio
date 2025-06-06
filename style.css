@@ -479,15 +479,12 @@ footer {
   }
 
   /* 作品カード */
+ @media (max-width: 600px) {
+  .works-scroll {
+    gap: 10px; /* 少し間隔狭く */
+    padding: 10px;
+  }
   .work-item {
     width: 95%;
-  }
-
- .work-item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
   }
 }
