@@ -102,12 +102,19 @@ header p {
 
 /* Worksページ用 */
 /* ナビゲーションリンク */
+.fixed-nav nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  margin: 0;
+  list-style: none;
+}
 
 .fixed-nav {
-  position: fixed;
+  position: fixed; /* ←これ！スクロールしても固定 */
   top: 0;
   left: 0;
-  width: 100%;         /* 画面幅いっぱい */
+  width: 100%;
   background: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   z-index: 1000;
@@ -115,7 +122,7 @@ header p {
 
 .fixed-nav nav ul {
   display: flex;
-  justify-content: center;  /* ここで横並び中央揃え */
+  justify-content: space-around;
   padding: 12px 0;
   margin: 0;
   list-style: none;
@@ -133,7 +140,6 @@ header p {
   font-weight: bold;
   box-shadow: 0 3px 6px rgba(0,0,0,0.1);
   transition: all 0.3s ease;
-  margin: 0 5px;  /* ボタン間の間隔 */
 }
 
 .fixed-nav nav ul li a:hover {
@@ -141,6 +147,15 @@ header p {
   color: #fff;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
+
+.fixed-nav nav ul li {
+  margin: 0 5px;
+}
+
+body {
+  padding-top: 80px; /* ←固定した分、ページの上の余白忘れずに！ */
+}
+
 
 /* 自己紹介へボタン */
 .to-about {
@@ -416,7 +431,7 @@ footer {
   }
 
  .fixed-nav {
-  width: 100%;
+  width: 30px;
   position: fixed;
   top: 0;
   left: 0;
