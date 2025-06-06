@@ -104,11 +104,13 @@ header p {
 /* ナビゲーションリンク */
 .fixed-nav nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 12px 0;
   margin: 0;
   list-style: none;
+  gap: 20px;
 }
+
 
 .fixed-nav {
   position: fixed; /* ←これ！スクロールしても固定 */
