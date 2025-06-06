@@ -479,6 +479,21 @@ footer {
 
   .work-item {
     width: 200% !important;
+
+  .works-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    padding: 16px;
+  }
+
+.work-item {
+    flex: 0 0 200px;
+    background-color: #f99;
+    border-radius: 10px;
+  }
+}
+
     background-color: #f99 !important;
   }
 }
