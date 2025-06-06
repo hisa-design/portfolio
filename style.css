@@ -424,7 +424,7 @@ footer {
 }
 
 /* スマホ用 */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 350px) {
   .fixed-nav {
     height: 50px;  /* 固定ナビの高さを小さめに */
   }
