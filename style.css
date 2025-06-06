@@ -424,3 +424,10 @@ footer {
 }
 
 /* スマホ用 */
+media screen and (max-width: 480px) {
+  .fixed-nav nav ul li a {
+    min-width: 30px;
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}
