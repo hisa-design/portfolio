@@ -424,21 +424,23 @@ footer {
 }
 
 /* スマホ用 */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 480px) {
   .fixed-nav {
-    height: 50px;  /* 固定ナビの高さを小さめに */
+    height: 50px;
   }
 
   body {
-    padding-top: 50px; /* 固定ナビ分の余白調整 */
+    padding-top: 50px;
   }
 
   .fixed-nav nav ul {
-    justify-content: flex-start;  /* 左寄せにする */
-    overflow-x: auto;             /* 横スクロールできる */
-    flex-wrap: nowrap;            /* 折り返しなし */
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
     padding: 8px 10px;
   }
+
+  /* ←このへんに追加する！ */
 
   .fixed-nav nav ul::-webkit-scrollbar {
     height: 4px;
@@ -449,10 +451,15 @@ footer {
     border-radius: 2px;
   }
 
- .fixed-nav nav ul li a {
-  min-width: 40px;  /* 元は80pxだったらここを小さく */
-  padding: 6px 10px; /* 内側の余白も調整できる */
-  font-size: 8px;
-  margin: 0 4px; /* ボタン同士の隙間 */
+  .fixed-nav nav ul::-webkit-scrollbar-track {
+    background: #ffe5e5;
+  }
+
+  .fixed-nav nav ul li a {
+    min-width: 40px;
+    padding: 6px 10px;
+    font-size: 8px;
+    margin: 0 4px;
+  }
 }
-}
+
