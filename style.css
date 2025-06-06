@@ -485,6 +485,12 @@ footer {
     width: auto !important; /* widthはautoに戻す */
   }
 
+  .work-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
   .works-scroll {
     display: flex;
     overflow-x: auto;
