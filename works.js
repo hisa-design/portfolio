@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalImg = document.getElementById("modal-img");
   const closeBtn = document.getElementById("close");
   const images = document.querySelectorAll(".work-image");
-  const worksScroll = document.querySelector('.works-scroll');
 
   images.forEach(img => {
     img.addEventListener("click", () => {
