@@ -133,7 +133,7 @@ header p {
 
 .fixed-nav nav ul li a {
   display: inline-block;
-  min-width: 120px;
+  min-width: 100%;
   text-align: center;
   padding: 12px 20px;
   background: #fce4ec;
@@ -428,7 +428,7 @@ footer {
 /* スマホ用 */
 @media screen and (max-width: 480px) {
   .fixed-nav nav ul li a {
-    min-width: 60px;
+    min-width: 100%;
     padding: 6px 12px;
     font-size: 13px;
   }
