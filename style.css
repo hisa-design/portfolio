@@ -41,7 +41,7 @@ header p {
   position: relative;
   width: 100%;
   max-width: 500px;
-  aspect-ratio: 16/9;
+  aspect-ratio: 1/1;
   margin: 40px auto;
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
