@@ -427,9 +427,15 @@ footer {
 
 /* スマホ用 */
 @media screen and (max-width: 480px) {
+  .fixed-nav nav ul {
+    justify-content: center;
+    flex-wrap: wrap; /* ボタンが多ければ折り返しもできるように */
+  }
+
   .fixed-nav nav ul li a {
-    min-width: 40px;
-    padding: 6px 12px;
-    font-size: 13px;
+    min-width: 60px;
+    padding: 6px 10px;
+    font-size: 12px;
+    margin: 4px; /* ちょっと間隔つけると可愛い */
   }
 }
