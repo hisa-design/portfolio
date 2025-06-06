@@ -1,5 +1,7 @@
 /* 全体の基本設定 */
 body {
+  font-family: 'Poppins', 'Noto Sans JP', 'Yu Gothic', 'Hiragino Kaku Gothic ProN', sans-serif;
+  padding-top: 75px; /* これも一緒に書いてもOK */
   margin: 0;
   padding: 0;
   font-family: 'Yu Gothic', 'Hiragino Kaku Gothic ProN', sans-serif;
