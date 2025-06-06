@@ -22,3 +22,13 @@ window.addEventListener("click", (e) => {
     modal.classList.remove("show");
   }
 });
+
+const worksScroll = document.querySelector('.works-scroll');
+
+worksScroll.addEventListener('scroll', () => {
+  const maxScrollLeft = worksScroll.scrollWidth - worksScroll.clientWidth;
+  if (worksScroll.scrollLeft >= maxScrollLeft) {
+    // 最後までスクロールしたら先頭へ戻す
+    worksScroll.scrollTo({ left: 0, behavior: 'smooth' });
+  }
+});
