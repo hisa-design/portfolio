@@ -425,7 +425,8 @@ footer {
 }
 
 /* スマホ用 */
-@media screen and (max-width: 480px) {
+@media (max-width: 600px) {
+  /* ナビ */
   .fixed-nav {
     height: 50px;
     overflow-x: auto;
@@ -474,10 +475,8 @@ footer {
   .fixed-nav nav ul::-webkit-scrollbar-track {
     background: #ffe5e5;
   }
-}
 
-/* スマホ時の作品カードの調整 */
-@media (max-width: 600px) {
+  /* 作品カード */
   .work-item {
     width: 90%;
   }
