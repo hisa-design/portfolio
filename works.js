@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   images.forEach(img => {
     img.addEventListener("click", () => {
-      console.log("画像クリックされたよ:", img.src); // ←ログ出したいならここに入れてOK
+      console.log("画像クリックされたよ:", img.src);
       modal.style.display = "block";
       modal.classList.add("show");
       modalImg.src = img.src;
