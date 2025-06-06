@@ -105,13 +105,6 @@ header p {
 
 /* Worksページ用 */
 /* ナビゲーションリンク */
-.fixed-nav nav ul {
-  display: flex;
-  justify-content: space-around;
-  padding: 12px 0;
-  margin: 0;
-  list-style: none;
-}
 
 .fixed-nav {
   position: fixed; /* ←これ！スクロールしても固定 */
@@ -281,6 +274,10 @@ body {
   background: #ffe5e5;
 }
 
+.works-scroll {
+  -webkit-overflow-scrolling: touch;
+}
+
 /* アニメ付きモーダル */
 
 .modal {
@@ -432,10 +429,10 @@ footer {
     flex-wrap: wrap; /* ボタンが多ければ折り返しもできるように */
   }
 
-  .fixed-nav nav ul li a {
-    min-width: 60px;
-    padding: 6px 10px;
-    font-size: 12px;
-    margin: 4px; /* ちょっと間隔つけると可愛い */
-  }
+ .fixed-nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 }
