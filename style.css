@@ -478,7 +478,6 @@ footer {
   }
 
   /* 作品カード */
-@media (max-width: 600px) {
   .work-item {
     width: 200% !important;
     background-color: #f99 !important;
