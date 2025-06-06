@@ -449,10 +449,10 @@ footer {
     border-radius: 2px;
   }
 
-  .fixed-nav nav ul li a {
-    min-width: 80px;
-    padding: 8px 12px;
-    font-size: 14px;
-    margin: 0 8px;
-  }
+ .fixed-nav nav ul li a {
+  min-width: 60px;  /* 元は80pxだったらここを小さく */
+  padding: 6px 10px; /* 内側の余白も調整できる */
+  font-size: 14px;
+  margin: 0 4px; /* ボタン同士の隙間 */
+}
 }
