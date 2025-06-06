@@ -1,79 +1,79 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>ひさのボカロ箱</title>
+<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hisa.’s　portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+ <header class="fixed-nav">
+  <nav>
+    <ul>
+      <li><a href="index.html">ホーム</a></li>
+      <li><a href="about.html">自己紹介</a></li>
+      <li><a href="works.html">作品集</a></li>
+      <li><a href="contact.html">お問い合わせ</a></li>
+    </ul>
+  </nav>
+</header>
+
   <header>
-    <h1>🌙 hisa.のボカロ箱</h1>
-    <p>hisa.は実はボカロPもやっています( ´艸｀)</p>
-    <nav>
-        <button>全部表示</button>
-      <button>エモい系</button>
-      <button>病み系</button>
-      <button>夜系</button>
-      <button>ネタ系</button>
-    </nav>
+    <h1>hisa.</h1>
+    <p>Webデザイナー＆ハンドメイド作家</p>
   </header>
 
-  <main class="gallery">
-    <div class="item" data-genre="夜系">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/_MICgPygpGE?si=AskNZ6V5zXzVXQuQ"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p>夜散歩</p>
-      <button class="fav">♡</button>
-        <span class="count">0</span>
+  <section class="profile">
+    <img src="img/me.jpg" alt="hisa.の写真">
+  
+       <!-- プロフィール文章 -->
+    <p class="intro">
+      こんにちは。<br>
+      Webデザインとハンドメイドが大好きなhisa.です<br>
+      かわいくてわくわくするものを作るのが好き。<br>
+      このサイトでは私の作品や趣味を紹介しています✨<br>
+    </p>
+  </section>
+  <section class="slideshow">
+    <img src="img/works3.jpg"  alt="作品1" class="slide active">
+    <img src="img/works4.jpg"  alt="作品2" class="slide">
+    <img src="img/works5.jpg"  alt="作品3" class="slide">
+  </section>
+  
+  <div class="to-about">
+  <a href="about.html">自己紹介を見る</a>
+  </div>
 
-    </div>
+  <div class="to-works">
+  <a href="works.html">作品集を見る</a>
+  </div>
 
-    <div class="item" data-genre="病み系">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/urG2pZWF3PM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p>腐った果実</p>
-      <button class="fav">♡</button>
-        <span class="count">0</span>
-    </div>
+  <div class="to-blogs">
+  <a href="https://yona407.wordpress.com/">ブログを見る</a>
+  </div>
 
-    <div class="item" data-genre="エモい系">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/0ZfXGe2TGsU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p>平行線</p>
-      <button class="fav">♡</button>
-        <span class="count">0</span>
-    </div>
-    
-    <div class="item" data-genre="病み系">
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/i6A6xb0Xcdg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p>ぺーシェント</p>
-      <button class="fav">♡</button>
-        <span class="count">0</span>
-    </div>
+<section class="latest-news">
+  <h2>📰 最新記事</h2>
+  <!-- ここにFeedwindの埋め込みコードを貼り付け -->
+ <iframe src="https://feed.mikle.com/widget/v2/173378/?preloader-text=Loading&" height="402px" width="100%" class="fw-iframe" scrolling="no" frameborder="0"></iframe>
+</section>
 
-    <div class="item" data-genre="エモい系">
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/U88soU8UURg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p>花に似た</p>
-     <button class="fav">♡</button>
-        <span class="count">0</span>
-    </div>
+<section class="latest-news">
+  <h2>X（旧ツイッター）</h2>
+  <!-- ここにFeedwindの埋め込みコードを貼り付け -->
+ <iframe src="https://feed.mikle.com/widget/v2/173379/?preloader-text=Loading&" height="402px" width="100%" class="fw-iframe" scrolling="no" frameborder="0"></iframe>
+</section>
 
-    <div class="item" data-genre="夜系">
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/G-LK-MdbFzw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p>ever tale</p>
-      <button class="fav">♡</button>
-        <span class="count">0</span>
-    </div>
-
-    <div class="item" data-genre="ネタ系">
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/DwWU0cVM-6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p>コンポタ缶のうた</p>
-      <button class="fav">♡</button>
-        <span class="count">0</span>
-    </div>
-    <!-- もっと増やせる -->
-  </main>
+  <section class="sns">
+    <a href="https://www.instagram.com/hisa_webdesign/">Instagram</a>
+    <a href="https://x.com/hisa_webdesign">X (Twitter)</a>
+    <a href="♯">その他</a>
+  </section>
 
   <footer>
-    <p>夜な夜なコーディング中🌙</p>
+    <p>Thank you for visiting💐</p>
+    <img src="#" alt="#">
   </footer>
-<script src="script.js"></script>
-</body>
-</html>
+
+
+<script src="js/slideshow.js"></script>
+</body></html>
