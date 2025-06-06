@@ -479,13 +479,12 @@ footer {
 
   /* works-scroll スマホ用 */
  .work-item {
-  flex: 0 0 80vw; /* 画面幅の80%に広げる */
-  max-width: 350px; /* 最大幅は350px */
-  background-color: #f99 !important;
-  border-radius: 10px;
-  width: auto !important;
-}
-
+    flex: 0 0 90vw; /* 80vwから90vwにアップ */
+    max-width: none; /* 最大幅解除 */
+    background-color: transparent !important; /* 背景色解除 */
+    border-radius: 10px;
+    width: auto !important;
+  }
 
   .work-item img {
     width: 100%;
