@@ -424,16 +424,3 @@ footer {
 }
 
 /* スマホ用 */
-@media screen and (max-width: 480px) {
-  .fixed-nav nav ul {
-    justify-content: center;
-    flex-wrap: wrap; /* ボタンが多ければ折り返しもできるように */
-  }
-
- .fixed-nav {
-  width: 30px;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-}
