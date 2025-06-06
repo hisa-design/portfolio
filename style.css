@@ -117,7 +117,7 @@ header p {
   position: fixed; /* ←これ！スクロールしても固定 */
   top: 0;
   left: 0;
-  width: 80px;
+  width: 120px;
   background: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   z-index: 1000;
@@ -428,7 +428,7 @@ footer {
 /* スマホ用 */
 @media screen and (max-width: 480px) {
   .fixed-nav nav ul li a {
-    min-width: 60px;
+    min-width: 40px;
     padding: 6px 12px;
     font-size: 13px;
   }
