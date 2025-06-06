@@ -426,7 +426,6 @@ footer {
   color: #aaa;
 }
 
-/* スマホ用 */
 @media (max-width: 600px) {
   .fixed-nav {
     height: 50px;
@@ -478,21 +477,19 @@ footer {
   }
 
   /* works-scroll スマホ用 */
-/* works-scroll スマホ用 */
-.work-item {
-  flex: 0 0 135vw; /* ←ここ！90vw → 135vwで約1.5倍 */
-  max-width: none;
-  background-color: transparent !important;
-  border-radius: 10px;
-  width: auto !important;
-}
+  .work-item {
+    flex: 0 0 135vw; /* ←ここを1.5倍にした！ */
+    max-width: none;
+    background-color: transparent !important;
+    border-radius: 10px;
+    width: auto !important;
+  }
 
-.work-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
+  .work-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
 
   .works-scroll {
     display: flex;
