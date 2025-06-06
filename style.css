@@ -477,9 +477,7 @@ footer {
     background: #ffe5e5;
   }
 
-  .work-item {
-    width: 200% !important;
-
+  /* works-scroll スマホ用 */
   .works-scroll {
     display: flex;
     overflow-x: auto;
@@ -487,13 +485,9 @@ footer {
     padding: 16px;
   }
 
-.work-item {
+  .work-item {
     flex: 0 0 200px;
     background-color: #f99;
     border-radius: 10px;
-  }
-}
-
-    background-color: #f99 !important;
   }
 }
