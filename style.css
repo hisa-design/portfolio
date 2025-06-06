@@ -478,10 +478,11 @@ footer {
   }
 
   /* works-scroll スマホ用 */
- .work-item {
-    width: 200% !important;
+  .work-item {
+    flex: 0 0 200px; /* 固定幅200pxにする */
     background-color: #f99 !important;
     border-radius: 10px;
+    width: auto !important; /* widthはautoに戻す */
   }
 
   .works-scroll {
