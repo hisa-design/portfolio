@@ -481,6 +481,6 @@ footer {
 @media (max-width: 600px) {
   .work-item {
     width: 200% !important;
-    background-color: #f99 !important; /* わかりやすく赤に */
+    background-color: #f99 !important;
   }
 }
