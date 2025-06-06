@@ -477,24 +477,9 @@ footer {
   }
 
   /* works-scroll スマホ用 */
-  .work-item {
-    flex: 0 0 135vw; /* ←ここを1.5倍にした！ */
-    max-width: none;
-    background-color: transparent !important;
-    border-radius: 10px;
-    width: auto !important;
-  }
-
-  .work-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-
-  .works-scroll {
-    display: flex;
-    overflow-x: auto;
-    gap: 16px;
-    padding: 16px;
+  .works-page {
+    transform: scale(1.5);
+    transform-origin: top left;
+    width: 66.6667%;
   }
 }
