@@ -1,4 +1,4 @@
-/* 全体設定 */
+/* 全体の基本設定 */
 body {
   margin: 0;
   padding: 0;
@@ -29,6 +29,7 @@ header p {
   color: #aa7a7a;
   font-style: italic;
 }
+
 
 /* プロフィール写真 */
 .profile img {
@@ -92,6 +93,17 @@ header p {
   letter-spacing: 0.05em;
 }
 
+/* 自己紹介文 */
+.profile p {
+  font-size: 16px;
+  padding: 0 20px;
+  line-height: 1.7;
+}
+
+.section-title {
+  margin-bottom: 0.1em;
+}
+
 /* スキル＆お気に入り */
 .skills, .favorites {
   display: inline-block;
@@ -116,7 +128,18 @@ header p {
   font-size: 1.15em;
 }
 
-/* 固定ナビゲーション */
+/* Worksページ用 */
+/* ナビゲーションリンク */
+.fixed-nav nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
+  margin: 0;
+  list-style: none;
+  gap: 20px;
+}
+
+
 .fixed-nav {
   position: fixed;
   top: 0;
@@ -179,12 +202,34 @@ header p {
   box-shadow: 0 5px 15px rgba(192, 128, 129, 0.3);
 }
 
-/* ページ上部余白調整 */
 body {
   padding-top: 75px;
 }
 
-/* 自己紹介へ、作品集へ、ブログへボタン */
+
+/* 自己紹介へボタン */
+.to-about {
+  margin: 30px 0;
+}
+
+.to-about a {
+  display: inline-block;
+  text-decoration: none;
+  color: #c08081;
+  border: 1px solid #c08081;
+  border-radius: 25px;
+  padding: 12px 24px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.to-about a:hover {
+  background-color: #ffe5e5;
+  color: #a04e4f;
+}
+/* 作品集へボタン */
 .to-about, .to-works, .to-blogs {
   margin: 30px 0;
 }
@@ -209,7 +254,9 @@ body {
   box-shadow: 0 5px 18px rgba(192, 128, 129, 0.2);
 }
 
-/* Works 横スクロール */
+/* Works */
+/* 横スクロールの作品紹介 */
+
 .works-scroll {
   display: flex;
   overflow-x: auto;
@@ -265,7 +312,28 @@ body {
   font-weight: 600;
 }
 
-/* モーダル */
+
+/* スクロールバーのカスタム（スマホ用） */
+
+.works-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.works-scroll::-webkit-scrollbar-thumb {
+  background: #c08081;
+  border-radius: 3px;
+}
+
+.works-scroll::-webkit-scrollbar-track {
+  background: #ffe5e5;
+}
+
+.works-scroll {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* アニメ付きモーダル */
+
 .modal {
   display: none;
   position: fixed;
@@ -286,4 +354,182 @@ body {
   border-radius: 20px;
   box-shadow: 0 6px 15px rgba(192, 128, 129, 0.3);
   margin-top: 50px;
-  opacity:
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ×ボタン */
+#close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #c08081;
+  font-size: 36px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* フェードインアニメーション */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* お問合せフォーム */
+.contact {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background: #fff0f5;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contact h2 {
+  text-align: center;
+  color: #c08081;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact label {
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #e0cfd2;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  outline: none;
+  border-color: #f8bbd0;
+  box-shadow: 0 0 5px #f8bbd0;
+}
+
+.contact button {
+  background: #fce4ec;
+  color: #c08081;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact button:hover {
+  background: #f8bbd0;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+
+/* SNSリンク */
+.sns {
+  margin: 30px 0;
+}
+
+.sns a {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #c08081;
+  border: 1px solid #c08081;
+  border-radius: 20px;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+
+.sns a:hover {
+  background-color: #ffe5e5;
+  color: #a04e4f;
+}
+
+/* フッター */
+footer {
+  margin-top: 40px;
+  padding: 20px 0;
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* スマホ用 */
+@media (max-width: 600px) {
+  /* ナビ */
+  .fixed-nav {
+    height: 50px;
+    overflow-x: auto;
+  }
+
+  body {
+    padding-top: 50px;
+  }
+
+  .fixed-nav nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 8px 10px;
+    margin: 0;
+    list-style: none;
+    gap: 8px;
+  }
+
+  .fixed-nav nav ul li {
+    flex: 0 0 auto;
+  }
+
+  .fixed-nav nav ul li a {
+    display: inline-block;
+    min-width: 60px;
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 20px;
+    background: #fce4ec;
+    text-align: center;
+    color: #c08081;
+    text-decoration: none;
+  }
+
+  .fixed-nav nav ul::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .fixed-nav nav ul::-webkit-scrollbar-thumb {
+    background: #c08081;
+    border-radius: 2px;
+  }
+
+  .fixed-nav nav ul::-webkit-scrollbar-track {
+    background: #ffe5e5;
+  }
+
+  /* 作品カード */
+@media (max-width: 600px) {
+  .work-item {
+    width: 135%; /* 90% × 1.5 = 135% */
+  }
+}
+
+  .work-item {
+    width: 95%;
+  }
+}
