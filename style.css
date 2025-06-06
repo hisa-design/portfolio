@@ -428,14 +428,13 @@ footer {
 @media screen and (max-width: 480px) {
   .fixed-nav {
     height: 50px;
-    overflow-x: auto; /* ← 親にも横スクロール許可 */
+    overflow-x: auto;
   }
 
   body {
     padding-top: 50px;
   }
 
- @media screen and (max-width: 480px) {
   .fixed-nav nav ul {
     display: flex;
     flex-wrap: nowrap;
@@ -446,11 +445,9 @@ footer {
     list-style: none;
     gap: 8px;
   }
-}
-
 
   .fixed-nav nav ul li {
-    flex: 0 0 auto; /* 横並び固定 */
+    flex: 0 0 auto;
   }
 
   .fixed-nav nav ul li a {
@@ -465,7 +462,6 @@ footer {
     text-decoration: none;
   }
 
-  /* スクロールバーも */
   .fixed-nav nav ul::-webkit-scrollbar {
     height: 4px;
   }
@@ -477,5 +473,17 @@ footer {
 
   .fixed-nav nav ul::-webkit-scrollbar-track {
     background: #ffe5e5;
+  }
+}
+
+/* スマホ時の作品カードの調整 */
+@media (max-width: 600px) {
+  .work-item {
+    width: 90%;
+  }
+
+  .work-item img {
+    height: auto;
+    object-fit: cover;
   }
 }
