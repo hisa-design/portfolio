@@ -110,7 +110,7 @@ header p {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%; /* 横幅いっぱい */
+  width: 100%; /* 横いっぱいに広げる */
   background: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   z-index: 1000;
@@ -118,22 +118,17 @@ header p {
 
 .fixed-nav nav ul {
   display: flex;
-  justify-content: center; /* 真ん中寄せ */
-  flex-wrap: wrap;
+  justify-content: center; /* 中央揃え */
   padding: 12px 0;
   margin: 0;
   list-style: none;
-}
-
-.fixed-nav nav ul li {
-  margin: 0 8px;
+  gap: 10px; /* ボタン間の隙間 */
 }
 
 .fixed-nav nav ul li a {
   display: inline-block;
-  min-width: 100px;
-  text-align: center;
-  padding: 10px 16px;
+  min-width: 120px;
+  padding: 12px 24px;
   background: #fce4ec;
   color: #c08081;
   text-decoration: none;
@@ -149,9 +144,9 @@ header p {
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* bodyのpadding調整も忘れずに */
+/* 上部固定分の余白も忘れずに */
 body {
-  padding-top: 80px;
+  padding-top: 60px;
 }
 
 
