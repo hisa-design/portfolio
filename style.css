@@ -239,7 +239,7 @@ body {
 
 .work-item {
   flex: 0 0 auto;
-  width: 100%; /* 250px → 350pxに拡大 */
+  width: 600px; /* 250px → 350pxに拡大 */
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
