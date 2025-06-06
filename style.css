@@ -100,35 +100,33 @@ header p {
   font-size: 1.1em;
 }
 
-
-
-
 /* Worksページ用 */
 /* ナビゲーションリンク */
 
 .fixed-nav {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%; /* 横いっぱいに広げる */
+  left: 50%;
+  transform: translateX(-50%);
   background: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   z-index: 1000;
+  border-radius: 25px;
+  padding: 8px 20px;
 }
 
 .fixed-nav nav ul {
   display: flex;
-  justify-content: center; /* 中央揃え */
-  padding: 12px 0;
+  justify-content: center;
+  padding: 0;
   margin: 0;
   list-style: none;
-  gap: 10px; /* ボタン間の隙間 */
+  gap: 12px;
 }
 
 .fixed-nav nav ul li a {
   display: inline-block;
-  min-width: 120px;
-  padding: 12px 24px;
+  padding: 10px 20px;
   background: #fce4ec;
   color: #c08081;
   text-decoration: none;
@@ -143,16 +141,6 @@ header p {
   color: #fff;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
-
-/* 上部固定分の余白も忘れずに */
-body {
-  padding-top: 60px;
-}
-
-
-
-
-
 
 /* 自己紹介へボタン */
 .to-about {
