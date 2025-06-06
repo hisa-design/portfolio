@@ -24,13 +24,3 @@ document.addEventListener('DOMContentLoaded', () => {
       modal.classList.remove("show");
     }
   });
-
-  if (worksScroll) {
-    worksScroll.addEventListener('scroll', () => {
-      const maxScrollLeft = worksScroll.scrollWidth - worksScroll.clientWidth;
-      if (worksScroll.scrollLeft >= maxScrollLeft) {
-        worksScroll.scrollTo({ left: 0, behavior: 'smooth' });
-      }
-    });
-  }
-});
