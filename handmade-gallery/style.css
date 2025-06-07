@@ -1,0 +1,73 @@
+body {
+
+  font-family: 'ヒラギノ角ゴシック', 'Hiragino Kaku Gothic Pro', メイリオ, meiryo, sans-serif;
+  background: radial-gradient(circle, #ffc1dc 0%, #ffeaf4 50%, #d6ffc9 100%);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #6b4c8b;
+}
+.gallery {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.item {
+  background-color: #f3e8ff; /* 薄いパステル紫 */
+  border-radius: 15px;
+  box-shadow: 0 2px 6px rgba(107, 76, 139, 0.2);
+  width: 220px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(107, 76, 139, 0.4);
+}
+.item img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  height: 180px;
+}
+.item p {
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 1.1em;
+  color: #6b4c8b;
+}
+
+/* ふわふわハート */
+.floating-heart {
+  position: fixed;
+  color: #d49eff;
+  font-size: 24px;
+  opacity: 0.8;
+  pointer-events: none;
+  user-select: none;
+  animation-name: floatUp;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-120vh) scale(1.5);
+    opacity: 0;
+  }
+}
